@@ -1,4 +1,4 @@
-angula.module('home')
+angular.module('home')
     .controller('homeController', function homeController() {
 
 
