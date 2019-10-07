@@ -13,6 +13,20 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
 
     $stateProvider.state('home', {
         url: '/home',
+        views: {
+            'index@home': {
+                templateUrl: './home/home.template.html',
+                controller: 'homeController'
+            },
+            'head@home': {
+                templateUrl: './header/header.template.html',
+                controller: 'headerController'
+            }
+
+        }
+    });
+    $stateProvider.state('home', {
+        url: '/home',
         templateUrl: './home/home.template.html',
         controller: 'homeController'
 
