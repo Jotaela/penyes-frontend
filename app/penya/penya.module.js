@@ -1,1 +1,1 @@
-angular.module('penya', []);
+angular.module('penya', ['ui.router', 'serveis']);

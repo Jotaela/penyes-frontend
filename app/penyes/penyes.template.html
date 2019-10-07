@@ -1,3 +1,7 @@
 <h1>Penyes</h1>
-<a href="#!/penyes/ronda">Ronda</a>
-<a href="#!/penyes/up">UP</a>
+<ul>
+    <li ng-repeat="penya in penyes">
+        <a ui-sref=".penya({ id: penya.id })">{{penya.nom}}</a>
+    </li>
+</ul>
+<div ui-view></div>

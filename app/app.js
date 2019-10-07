@@ -23,8 +23,8 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
         controller: 'penyesController'
 
     });
-    $stateProvider.state('penya', {
-        url: '/penyes/:nom',
+    $stateProvider.state('penyes.penya', {
+        url: '/:id',
         templateUrl: './penya/penya.template.html',
         controller: 'penyaController'
 
