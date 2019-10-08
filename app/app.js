@@ -7,34 +7,50 @@ angular.module('myApp', [
     'ngMessages',
     'home',
     'penyes',
-    'penya'
+    'penya',
+    'header'
 ]).
-config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+    config([
+        '$stateProvider',
+        '$urlRouterProvider',
+        '$mdThemingProvider',
+        '$mdIconProvider',
+        '$sceDelegateProvider',
+        function ($stateProvider,
+            $urlRouterProvider,
+            $mdThemingProvider,
+            $mdIconProvider,
+            $sceDelegateProvider) {
 
     $stateProvider.state('home', {
         url: '/home',
+
         views: {
-            'index@home': {
+            'primary': {
                 templateUrl: './home/home.template.html',
                 controller: 'homeController'
             },
-            'head@home': {
+            'header': {
                 templateUrl: './header/header.template.html',
                 controller: 'headerController'
             }
 
         }
     });
-    $stateProvider.state('home', {
-        url: '/home',
-        templateUrl: './home/home.template.html',
-        controller: 'homeController'
-
-    });
     $stateProvider.state('penyes', {
         url: '/penyes',
-        templateUrl: './penyes/penyes.template.html',
-        controller: 'penyesController'
+        views: {
+            'primary': {
+                templateUrl: './penyes/penyes.template.html',
+                controller: 'penyesController'
+            },
+            'header': {
+                templateUrl: './header/header.template.html',
+                controller: 'headerController'
+            }
+
+        }
+        
 
     });
     $stateProvider.state('penyes.penya', {
@@ -42,6 +58,17 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
         templateUrl: './penya/penya.template.html',
         controller: 'penyaController'
 
-    });
-    $urlRouterProvider.otherwise('/home');
+        });
+
+        $urlRouterProvider.otherwise('/home');
+
+    // ESTILS PROVIDERS
+    $mdThemingProvider.theme('temaPrincipal').primaryPalette('blue')
+        .accentPalette('teal')
+        .warnPalette('red')
+            .backgroundPalette('grey');
+    $mdThemingProvider.setDefaultTheme('temaPrincipal');
+    $mdIconProvider
+            .iconSet('social', 'img/icons/sets/social-icons.svg', 24)
+            .defaultIconSet('img/icons/sets/core-icons.svg', 24);
 }]);
