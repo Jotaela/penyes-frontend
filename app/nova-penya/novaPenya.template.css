@@ -1,0 +1,8 @@
+md-bottom-sheet {
+    padding: 0px;
+    bottom: 80px;
+    height: 80%;
+}
+md-content {
+    overflow: auto;
+}

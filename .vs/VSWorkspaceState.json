@@ -2,8 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\home"
+    "\\app\\header",
+    "\\app\\header\\header.controller.js",
+    "\\app\\home",
+    "\\app\\penya",
+    "\\app\\penyes",
+    "\\app\\services"
   ],
-  "SelectedNode": "\\app",
+  "SelectedNode": "\\app\\penya\\penya.template.html",
   "PreviewInSolutionExplorer": false
 }

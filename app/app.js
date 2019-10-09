@@ -7,7 +7,8 @@ angular.module('myApp', [
     'ngMessages',
     'home',
     'penyes',
-    'penya',
+    'infoPenya',
+    'novaPenya',
     'header'
 ]).
     config([
@@ -53,14 +54,14 @@ angular.module('myApp', [
         
 
     });
-    $stateProvider.state('penyes.penya', {
-        url: '/:id',
-        templateUrl: './penya/penya.template.html',
-        controller: 'penyaController'
+    //$stateProvider.state('penyes.penya', {
+    //    url: '/:id',
+    //    templateUrl: './penya/penya.template.html',
+    //    controller: 'penyaController'
+    //
+    //    });
 
-        });
-
-        $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/home');
 
     // ESTILS PROVIDERS
     $mdThemingProvider.theme('temaPrincipal').primaryPalette('blue')

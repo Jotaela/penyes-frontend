@@ -1,0 +1,40 @@
+<<md-bottom-sheet class="md-list ng-scope" layout="column" layout-padding>
+    <md-content>
+        <h1>Crear Penya</h1>
+        <form name="novaPenyaForm" ng-submint="submintForm(novaPenyaForm.$valid)">
+            <md-input-container class="md-block">
+                <label>Nom</label>
+                <input type="text" md-maxlength="20" required name="nom" ng-model="novaPenya.nom">
+                <div ng-messages="novaPenyaForm.nom.$error">
+                    <div ng-message="required">Aquest camp és requerit.</div>
+                    <div ng-message="md-maxlength">El nom  no pot passar de 20 caràcters</div>
+                </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Cap de penya</label>
+                <input type="text" md-maxlength="40" required name="cap1" ng-model="novaPenya.cap1">
+                <div ng-messages="novaPenyaForm.cap1.$error">
+                    <div ng-message="required">Aquest camp és requerit.</div>
+                    <div ng-message="md-maxlength">El nom  no pot passar de 40 caràcters</div>
+                </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Segon cap de penya</label>
+                <input type="text" md-maxlength="40" required name="cap2" ng-model="novaPenya.cap2">
+                <div ng-messages="novaPenyaForm.cap2.$error">
+                    <div ng-message="required">Aquest camp és requerit.</div>
+                    <div ng-message="md-maxlength">El nom  no pot passar de 40 caràcters</div>
+                </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Número de participants</label>
+                <input type="number" name="num" ng-model="novaPenya.num">
+                <div ng-messages="novaPenyaForm.num.$error">
+                </div>
+            </md-input-container>
+            <div>
+                <md-button type="submint">Submit</md-button>
+            </div>
+        </form>
+    </md-content>
+</md-bottom-sheet>
