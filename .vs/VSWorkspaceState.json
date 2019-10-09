@@ -2,13 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\app",
+    "\\app\\core",
     "\\app\\header",
-    "\\app\\header\\header.controller.js",
     "\\app\\home",
-    "\\app\\penya",
+    "\\app\\missatges",
+    "\\app\\nova-penya",
     "\\app\\penyes",
-    "\\app\\services"
+    "\\app\\services",
+    "\\e2e-tests"
   ],
-  "SelectedNode": "\\app\\penya\\penya.template.html",
+  "SelectedNode": "\\app\\missatges\\missatges.template.html",
   "PreviewInSolutionExplorer": false
 }

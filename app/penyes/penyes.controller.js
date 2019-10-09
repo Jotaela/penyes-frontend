@@ -7,7 +7,7 @@ angular.module('penyes')
         function penyesController($scope,
             getPenyes,
             $mdBottomSheet) {
-            
+            $scope.menorQue500 = window.screen.height < 500;
             $scope.penyes = getPenyes.all();
 
             $scope.infoPenya = function (penya) {
@@ -23,7 +23,7 @@ angular.module('penyes')
                 });
             }
 
-            $scope.novaPenya = function (penya) {
+            $scope.novaPenya = function () {
                 $mdBottomSheet.show({
                     templateUrl: './nova-penya/novaPenya.template.html',
                     controller: 'novaPenyaController',

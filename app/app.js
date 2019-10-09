@@ -9,6 +9,7 @@ angular.module('myApp', [
     'penyes',
     'infoPenya',
     'novaPenya',
+    'missatges',
     'header'
 ]).
     config([
@@ -44,6 +45,22 @@ angular.module('myApp', [
             'primary': {
                 templateUrl: './penyes/penyes.template.html',
                 controller: 'penyesController'
+            },
+            'header': {
+                templateUrl: './header/header.template.html',
+                controller: 'headerController'
+            }
+
+        }
+        
+
+    });
+    $stateProvider.state('missatges', {
+        url: '/missatges',
+        views: {
+            'primary': {
+                templateUrl: './missatges/missatges.template.html',
+                controller: 'missatgesController'
             },
             'header': {
                 templateUrl: './header/header.template.html',

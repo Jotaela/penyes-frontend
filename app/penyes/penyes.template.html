@@ -1,13 +1,15 @@
 <div style="text-align:center">
-    <h1 class="md-display-3">Penyes</h1>
+    <h1 class="md-display-3 titol">Penyes</h1>
     <div style="display:block">
         <md-input-container>
             <input type="text" ng-model="nom" aria-label="filtre nom de penya">
         </md-input-container>
     </div>
-    <div ng-repeat="penya in penyes | filter:nom" style="text-align:left; display:inline" layout-wrap>
-        <md-button ng-click="infoPenya(penya)">{{penya.nom}}</md-button>
-    </div>
+        <md-content id="contenidor_llista">
+            <div ng-repeat="penya in penyes | filter:nom" style="text-align:left; display:inline" layout-wrap>
+                <md-button ng-click="infoPenya(penya)">{{penya.nom}}</md-button>
+            </div>
+        </md-content>
     <md-button ng-click="novaPenya()" id="boto_crear" class="md-fab md-primary md-hue-2" aria-label="Crear">
         <md-icon></md-icon>
     </md-button>

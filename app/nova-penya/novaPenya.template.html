@@ -1,7 +1,7 @@
 <<md-bottom-sheet class="md-list ng-scope" layout="column" layout-padding>
     <md-content>
         <h1>Crear Penya</h1>
-        <form name="novaPenyaForm" ng-submint="submintForm(novaPenyaForm.$valid)">
+        <form name="novaPenyaForm" ng-submit="submitForm(novaPenyaForm.$valid)">
             <md-input-container class="md-block">
                 <label>Nom</label>
                 <input type="text" md-maxlength="20" required name="nom" ng-model="novaPenya.nom">
@@ -33,7 +33,7 @@
                 </div>
             </md-input-container>
             <div>
-                <md-button type="submint">Submit</md-button>
+                <md-button type="submit">Submit</md-button>
             </div>
         </form>
     </md-content>

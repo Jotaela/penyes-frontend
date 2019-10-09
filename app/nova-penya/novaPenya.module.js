@@ -1,1 +1,1 @@
-angular.module('novaPenya', ['ngMessages']);
+angular.module('novaPenya', ['ngMessages', 'serveis']);

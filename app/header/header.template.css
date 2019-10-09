@@ -1,0 +1,9 @@
+#contenidor_nav {
+    display: block;
+    text-align: center;
+    width:100%;
+}
+.item_nav {
+    display:inline;
+    position:relative;
+}

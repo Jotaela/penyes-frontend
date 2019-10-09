@@ -3,3 +3,13 @@
     bottom: 10px;
     right: 10px;
 }
+#contenidor_llista {
+    background-color: inherit;
+    overflow: auto;
+    height: 40vh;
+}
+@media (min-width: 500px) {
+    .titol {
+        display: none;
+    }
+}

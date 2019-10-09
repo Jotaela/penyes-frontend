@@ -1,5 +1,5 @@
 angular.module('header')
-    .controller('headerController', function headerController($rootScope){
+    .controller('headerController', function headerController($rootScope, $scope){
         (function () {
             'use strict';
 
