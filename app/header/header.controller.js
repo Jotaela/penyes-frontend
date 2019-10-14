@@ -1,5 +1,5 @@
 angular.module('header')
-    .controller('headerController', function headerController($rootScope, $scope){
+    .controller('headerController', function headerController($rootScope, $scope, $mdSidenav){
         (function () {
             'use strict';
 
@@ -7,4 +7,13 @@ angular.module('header')
                 $scope.currentLink = getCurrentLinkFromRoute(current);
             });
         });
+
+        $scope.toggleMenu = buildToggler('left');
+
+        function buildToggler(componentId) {
+            return function () {
+                $mdSidenav(componentId).toggle();
+            };
+        }
+       
     });

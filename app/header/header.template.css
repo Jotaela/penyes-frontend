@@ -7,3 +7,13 @@
     display:inline;
     position:relative;
 }
+#menu {
+    position:absolute;
+}
+.menu_item_nav {
+    display:block;
+
+}
+#menu_nav {
+    margin-top: 10vh;
+}

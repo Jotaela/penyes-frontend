@@ -36,8 +36,11 @@ angular.module('myApp', [
                 'header': {
                     templateUrl: './header/header.template.html',
                     controller: 'headerController'
+                },
+                'menu': {
+                    templateUrl: './header/menu.template.html',
+                    controller: 'headerController'
                 }
-
             }
         });
         $stateProvider.state('penyes', {
@@ -87,12 +90,6 @@ angular.module('myApp', [
             }
                  
         });
-        //$stateProvider.state('penyes.penya', {
-        //    url: '/:id',
-        //    templateUrl: './penya/penya.template.html',
-        //    controller: 'penyaController'
-        //
-        //    });
 
         $urlRouterProvider.otherwise('/home');
 
@@ -104,5 +101,5 @@ angular.module('myApp', [
         $mdThemingProvider.setDefaultTheme('temaPrincipal');
         $mdIconProvider
                 .iconSet('social', 'img/icons/sets/social-icons.svg', 24)
-                .defaultIconSet('img/icons/sets/core-icons.svg', 24);
+                .defaultIconSet('img/icons/sets/social-icons.svg', 24);
 }]);

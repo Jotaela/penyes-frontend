@@ -2,15 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\core",
     "\\app\\header",
-    "\\app\\home",
-    "\\app\\missatges",
-    "\\app\\nova-penya",
-    "\\app\\penyes",
-    "\\app\\services",
+    "\\app\\img\\icons",
+    "\\app\\img\\icons\\sets",
     "\\e2e-tests"
   ],
-  "SelectedNode": "\\app\\missatges\\missatges.template.html",
+  "SelectedNode": "\\app\\header\\header.module.js",
   "PreviewInSolutionExplorer": false
 }

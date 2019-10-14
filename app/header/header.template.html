@@ -1,7 +1,10 @@
-    <md-nav-bar md-selected-nav-item="currentNavItem" aria-label="Barra de navegacio">
-        <div id="contenidor_nav">
-            <md-nav-item class="item_nav" md-nav-href="/#!/home" name="/#!/home">Home</md-nav-item>
-            <md-nav-item class="item_nav" md-nav-href="/#!/penyes" name="/#!/penyes">Penyes</md-nav-item>
-            <md-nav-item class="item_nav" md-nav-href="/#!/missatges" name="/#!/missatges">Missatges</md-nav-item>
-        </div>
-    </md-nav-bar>
+<md-nav-bar md-selected-nav-item="currentNavItem" aria-label="Barra de navegacio">
+    <md-button id="menu" ng-click="toggleMenu()" class="md-primary md-hue-2" aria-label="Crear">
+        <md-icon md-svg-icon="img/icons/sets/menu-24px.svg"></md-icon>
+    </md-button>
+    <div id="contenidor_nav">
+        <md-nav-item class="item_nav" md-nav-sref="home" name="/#!/home">Home</md-nav-item>
+        <md-nav-item class="item_nav" md-nav-sref="penyes" name="/#!/penyes">Penyes</md-nav-item>
+        <md-nav-item class="item_nav" md-nav-sref="missatges" name="/#!/missatges">Missatges</md-nav-item>
+    </div>
+</md-nav-bar>
