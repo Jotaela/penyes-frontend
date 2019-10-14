@@ -53,6 +53,10 @@ angular.module('myApp', [
                 'header': {
                     templateUrl: './header/header.template.html',
                     controller: 'headerController'
+                },
+                'menu': {
+                    templateUrl: './header/menu.template.html',
+                    controller: 'headerController'
                 }
 
             }
@@ -69,6 +73,10 @@ angular.module('myApp', [
                 'header': {
                     templateUrl: './header/header.template.html',
                     controller: 'headerController'
+                },
+                'menu': {
+                    templateUrl: './header/menu.template.html',
+                    controller: 'headerController'
                 }
 
             }
@@ -84,6 +92,10 @@ angular.module('myApp', [
                 },
                 'header': {
                     templateUrl: './header/header.template.html',
+                    controller: 'headerController'
+                },
+                'menu': {
+                    templateUrl: './header/menu.template.html',
                     controller: 'headerController'
                 }
 
