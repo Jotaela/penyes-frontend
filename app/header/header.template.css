@@ -1,19 +1,4 @@
-#contenidor_nav {
-    display: block;
-    text-align: center;
-    width:100%;
-}
-.item_nav {
-    display:inline;
-    position:relative;
-}
+
 #menu {
     position:absolute;
-}
-.menu_item_nav {
-    display:block;
-
-}
-#menu_nav {
-    margin-top: 10vh;
 }

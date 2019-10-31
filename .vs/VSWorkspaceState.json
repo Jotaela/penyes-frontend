@@ -3,10 +3,10 @@
     "",
     "\\app",
     "\\app\\header",
-    "\\app\\img\\icons",
-    "\\app\\img\\icons\\sets",
-    "\\e2e-tests"
+    "\\app\\info-penya",
+    "\\app\\penyes",
+    "\\app\\services"
   ],
-  "SelectedNode": "\\app\\header\\header.module.js",
+  "SelectedNode": "\\app\\info-penya\\infoPenya.template.html",
   "PreviewInSolutionExplorer": false
 }

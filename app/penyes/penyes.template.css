@@ -8,8 +8,3 @@
     overflow: auto;
     height: 40vh;
 }
-@media (min-width: 500px) {
-    .titol {
-        display: none;
-    }
-}

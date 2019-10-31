@@ -1,8 +1,10 @@
 <<md-bottom-sheet class="md-list ng-scope" layout="column" layout-padding>
      <md-content>
-         <h1>Nom: {{penya.nom}}</h1>
-         <h2>Bap: {{penya.cap1}}</h2>
-         <h2>Subcap: {{penya.cap2}}</h2>
-         <h2>Integrants: {{penya.num}}</h2>
+         <md-list>
+             <md-list-item class="md-2-line">Nom: {{penya.nom}}</md-list-item>   
+             <md-list-item class="md-list-item-tex">Cap: {{penya.cap1}}</md-list-item>   
+             <md-list-item>Subcap: {{penya.cap2}}</md-list-item>   
+             <md-list-item>Integrants: {{penya.num}}</md-list-item>   
+         </md-list>
      </md-content>
 </md-bottom-sheet>
