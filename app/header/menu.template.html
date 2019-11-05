@@ -1,8 +1,8 @@
-<md-sidenav flex class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked="true" md-selected-nav-item="selectedItem">
-    <md-button md-is-locked-open="false" id="menu" ng-click="toggleMenu()" class="md-primary md-hue-2" aria-label="Crear">
-        <md-icon md-svg-icon="img/icons/sets/menu-24px.svg"></md-icon>
+<md-sidenav flex layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked="true" md-selected-nav-item="selectedItem">
+    <md-button id="menu" ng-click="toggleMenu()" class="md-primary md-hue-2" aria-label="Obrir menú">
+        <md-icon md-svg-icon="img/icons/sets/menu-24px.svg"><a/md-icon>
     </md-button>
-    <nav flex layout="column" layout-align="center center"aria-label="Barra de navegacio" >
+    <nav flex aria-label="Barra de navegacio" layout="column" layout-align="center center">
         <a class="md-button" ui-sref="layout.home" ng-click="toggleMenu()">Home</a>
         <a class="md-button" ui-sref="layout.penyes" ng-click="toggleMenu()">Penyes</a>
         <a class="md-button" ui-sref="layout.missatges" ng-click="toggleMenu()">Missatges</a>
