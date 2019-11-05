@@ -11,7 +11,8 @@ angular.module('myApp', [
     'novaPenya',
     'missatges',
     'header',
-    'chart'
+    'chart',
+    'primary'
 ]).
     config([
         '$stateProvider',
@@ -25,93 +26,68 @@ angular.module('myApp', [
             $mdIconProvider,
             $sceDelegateProvider) {
 
-        $stateProvider.state('home', {
-            url: '/home',
-
-            views: {
-                'primary': {
-                    templateUrl: './home/home.template.html',
-                    controller: 'homeController'
-                },
-                'header': {
-                    templateUrl: './header/header.template.html',
-                    controller: 'headerController'
-                },
-                'menu': {
-                    templateUrl: './header/menu.template.html',
-                    controller: 'headerController'
+            $stateProvider.state('layout', {
+                url: '',
+                views: {
+                    'header': {
+                        templateUrl: './header/header.template.html',
+                        controller: 'headerController'
+                    },
+                    'menu': {
+                        templateUrl: './header/menu.template.html',
+                        controller: 'headerController'
+                    },
+                    'primary': {
+                        templateUrl: './primary/primary.template.html',
+                        controller: 'primaryController'
+                    }
                 }
-            }
-        });
-        $stateProvider.state('penyes', {
-            url: '/penyes',
-            views: {
-                'primary': {
-                    templateUrl: './penyes/penyes.template.html',
-                    controller: 'penyesController'
-                },
-                'header': {
-                    templateUrl: './header/header.template.html',
-                    controller: 'headerController'
-                },
-                'menu': {
-                    templateUrl: './header/menu.template.html',
-                    controller: 'headerController'
+            })
+            $stateProvider.state('layout.home', {
+                url: '/home',
+                views: {
+                    home: {
+                        templateUrl: './home/home.template.html',
+                        controller: 'homeController'
+                    }
                 }
-
-            }
-        
-
-        });
-        $stateProvider.state('missatges', {
-            url: '/missatges',
-            views: {
-                'primary': {
-                    templateUrl: './missatges/missatges.template.html',
-                    controller: 'missatgesController'
-                },
-                'header': {
-                    templateUrl: './header/header.template.html',
-                    controller: 'headerController'
-                },
-                'menu': {
-                    templateUrl: './header/menu.template.html',
-                    controller: 'headerController'
+            });
+            $stateProvider.state('layout.penyes', {
+                url: '/penyes',
+                views: {
+                    penyes: {
+                        templateUrl: './penyes/penyes.template.html',
+                        controller: 'penyesController'
+                    }
                 }
-
-            }
-        
-
-        });
-        $stateProvider.state('chart', {
-            url: '/chart',
-            views: {
-                'primary': {
-                    templateUrl: './chart/chart.template.html',
-                    controller: 'chartController'      
-                },
-                'header': {
-                    templateUrl: './header/header.template.html',
-                    controller: 'headerController'
-                },
-                'menu': {
-                    templateUrl: './header/menu.template.html',
-                    controller: 'headerController'
+            });
+            $stateProvider.state('layout.missatges', {
+                url: '/missatges',
+                views: {
+                    penyes: {
+                        templateUrl: './missatges/missatges.template.html',
+                        controller: 'missatgesController'
+                    }
                 }
+            });
+            $stateProvider.state('layout.chart', {
+                url: '/chart',
+                views: {
+                    penyes: {
+                        templateUrl: './chart/chart.template.html',
+                        controller: 'chartController'
+                    }
+                }
+            });
+            
 
-            }
-                 
-        });
-
-        $urlRouterProvider.otherwise('/home');
-
-        // ESTILS PROVIDERS
-        $mdThemingProvider.theme('temaPrincipal').primaryPalette('blue')
-            .accentPalette('teal')
-            .warnPalette('red')
-                .backgroundPalette('grey');
-        $mdThemingProvider.setDefaultTheme('temaPrincipal');
-        $mdIconProvider
-                .iconSet('social', 'img/icons/sets/social-icons.svg', 24)
-                .defaultIconSet('img/icons/sets/social-icons.svg', 24);
+            // ESTILS PROVIDERS
+            $mdThemingProvider.theme('temaPrincipal').primaryPalette('blue')
+                .accentPalette('teal')
+                .warnPalette('red')
+                    .backgroundPalette('grey');
+            $mdThemingProvider.setDefaultTheme('temaPrincipal');
+            $mdIconProvider
+                    .iconSet('social', 'img/icons/sets/social-icons.svg', 24)
+                    .defaultIconSet('img/icons/sets/social-icons.svg', 24);
 }]);

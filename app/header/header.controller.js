@@ -1,12 +1,7 @@
 angular.module('header')
-    .controller('headerController', function headerController($rootScope, $scope, $mdSidenav){
-        (function () {
-            'use strict';
+    .controller('headerController', function headerController($scope, $mdSidenav, $state){
 
-            $rootScope.$on('$routeChangeSuccess', function (event, current) {
-                $scope.currentLink = getCurrentLinkFromRoute(current);
-            });
-        });
+        $scope.selectedItem = $state.current.name;
 
         $scope.toggleMenu = buildToggler('left');
 
@@ -15,5 +10,6 @@ angular.module('header')
                 $mdSidenav(componentId).toggle();
             };
         }
-       
+
+
     });
