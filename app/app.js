@@ -79,7 +79,8 @@ angular.module('myApp', [
                     }
                 }
             });
-            
+            $urlRouterProvider.otherwise('home');
+
 
             // ESTILS PROVIDERS
             $mdThemingProvider.theme('temaPrincipal').primaryPalette('blue')
