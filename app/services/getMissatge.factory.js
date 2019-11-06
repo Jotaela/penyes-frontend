@@ -6,18 +6,18 @@ angular.module('serveis')
             },
             all: () => {
                 return [
-                    {foto: "sdasd.jpg", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
-                    {foto: "sdasd.jpg", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
-                    {foto: "sdasd.jpg", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
-                    {foto: "sdasd.jpg", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
-                    {foto: "sdasd.jpg", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
-                    {foto: "sdasd.jpg", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
-                    {foto: "sdasd.jpg", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
-                    {foto: "sdasd.jpg", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
-                    {foto: "sdasd.jpg", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
-                    {foto: "sdasd.jpg", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
-                    {foto: "sdasd.jpg", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
-                    {foto: "sdasd.jpg", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"}
+                    {foto: "./img/fotos/default-avatar.png", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
+                    {foto: "./img/fotos/default-avatar.png", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
+                    {foto: "./img/fotos/default-avatar.png", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
+                    {foto: "./img/fotos/default-avatar.png", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
+                    {foto: "./img/fotos/default-avatar.png", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
+                    {foto: "./img/fotos/default-avatar.png", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
+                    {foto: "./img/fotos/default-avatar.png", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
+                    {foto: "./img/fotos/default-avatar.png", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
+                    {foto: "./img/fotos/default-avatar.png", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
+                    {foto: "./img/fotos/default-avatar.png", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
+                    {foto: "./img/fotos/default-avatar.png", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"},
+                    {foto: "./img/fotos/default-avatar.png", remitent: "Jotaela", cos: "l'altre dia viag a nara c om,prar peix i carn adasdisdmnao das dsad asdad asjdakjd acdkjan adasjd asdasdsad da da ksd a jd sa sd"}
                 ];
             }
         };

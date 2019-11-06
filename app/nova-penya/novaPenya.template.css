@@ -6,3 +6,7 @@ md-bottom-sheet {
 md-content {
     overflow: auto;
 }
+#contenidor-nova-penya {
+    background-color: inherit;
+    overflow: auto;
+}

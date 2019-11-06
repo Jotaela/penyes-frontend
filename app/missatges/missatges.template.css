@@ -1,0 +1,5 @@
+#contenidor-missatges {
+    overflow: auto;
+    background-color:inherit;
+    height: 70vh;
+}

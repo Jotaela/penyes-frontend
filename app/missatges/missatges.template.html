@@ -1,10 +1,9 @@
-<div style="text-align:center; width: 100%">
+<div style="text-align:center; width: 100%" flex layout="column">
 	<h1 class="md-display-3 titol">Missatges</h1>
-	<div>
-	<md-content style="background-color: inherit">
-		<md-list style="text-align:left"vflex>
+	<md-content id="contenidor-missatges" flex layout="column">
+		<md-list style="text-align:left" flex>
 			<md-list-item class="md-3-line md-long-text" ng-repeat="missatge in missatges">
-				<img ng-src="{{ missatge.foto }}?25" class="md-avatar"  />
+				<img ng-src="{{ missatge.foto }}?25" class="md-avatar"/>
 				<div class="md-list-item-text">
 					<h3>{{ missatge.remitent }}</h3>
 					<p>
@@ -14,5 +13,4 @@
 			</md-list-item>
 		</md-list>
 	</md-content>
-	</div>
 </div>
