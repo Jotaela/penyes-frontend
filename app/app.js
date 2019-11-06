@@ -82,12 +82,26 @@ angular.module('myApp', [
             
 
             // ESTILS PROVIDERS
-            $mdThemingProvider.theme('temaPrincipal').primaryPalette('blue')
-                .accentPalette('teal')
+            $mdThemingProvider.definePalette('tortoRed', {
+                '50': 'ff0000',
+                '100': 'f00000',
+                '200': 'd81818',
+                '300': 'f00018',
+                '400': 'ff0000',
+                '500': 'ff0000',
+                '600': 'ff0000',
+                '700': 'ff0000',
+                '800': 'ff0000',
+                '900': 'ff0000',
+                'A100': 'ff0000',
+                'A200': 'ff0000',
+                'A400': 'ff0000',
+                'A700': 'ff0000',
+            });
+
+            $mdThemingProvider.theme('temaPrincipal').primaryPalette('red')
+                .accentPalette('yellow')
                 .warnPalette('red')
                     .backgroundPalette('grey');
             $mdThemingProvider.setDefaultTheme('temaPrincipal');
-            $mdIconProvider
-                    .iconSet('social', 'img/icons/sets/social-icons.svg', 24)
-                    .defaultIconSet('img/icons/sets/social-icons.svg', 24);
 }]);

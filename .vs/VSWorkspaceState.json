@@ -3,10 +3,11 @@
     "",
     "\\app",
     "\\app\\header",
-    "\\app\\info-penya",
+    "\\app\\home",
     "\\app\\penyes",
+    "\\app\\primary",
     "\\app\\services"
   ],
-  "SelectedNode": "\\app\\info-penya\\infoPenya.template.html",
+  "SelectedNode": "\\app\\header\\menu.template.html",
   "PreviewInSolutionExplorer": false
 }
