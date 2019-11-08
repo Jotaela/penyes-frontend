@@ -1,14 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\app",
-    "\\app\\header",
-    "\\app\\home",
-    "\\app\\info-penya",
-    "\\app\\penyes",
-    "\\app\\primary",
-    "\\app\\services"
+    ""
   ],
-  "SelectedNode": "\\app\\header\\menu.template.html",
   "PreviewInSolutionExplorer": false
 }
